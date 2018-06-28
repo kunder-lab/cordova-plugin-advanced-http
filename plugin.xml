@@ -59,7 +59,6 @@
     <source-file src="src/android/com/github/kevinsawicki/http/TLSSocketFactory.java" target-dir="src/com/github/kevinsawicki/http"/>
     <source-file src="src/android/com/synconset/cordovahttp/CordovaHttp.java" target-dir="src/com/synconset/cordovahttp"/>
     <source-file src="src/android/com/synconset/cordovahttp/CordovaHttpDelete.java" target-dir="src/com/synconset/cordovahttp"/>
-    <source-file src="src/android/com/synconset/cordovahttp/CordovaHttpDownload.java" target-dir="src/com/synconset/cordovahttp"/>
     <source-file src="src/android/com/synconset/cordovahttp/CordovaHttpGet.java" target-dir="src/com/synconset/cordovahttp"/>
     <source-file src="src/android/com/synconset/cordovahttp/CordovaHttpHead.java" target-dir="src/com/synconset/cordovahttp"/>
     <source-file src="src/android/com/synconset/cordovahttp/CordovaHttpPlugin.java" target-dir="src/com/synconset/cordovahttp"/>

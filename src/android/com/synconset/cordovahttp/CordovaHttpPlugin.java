@@ -121,9 +121,7 @@ public class CordovaHttpPlugin extends CordovaPlugin {
             JSONObject headers = args.getJSONObject(2);
             String filePath = args.getString(3);
             int timeoutInMilliseconds = args.getInt(4) * 1000;
-            CordovaHttpDownload download = new CordovaHttpDownload(urlString, params, headers, filePath, timeoutInMilliseconds, callbackContext);
-
-            cordova.getThreadPool().execute(download);
+            callbackContext.error("Not supported");
         } else if (action.equals("disableRedirect")) {
             boolean disable = args.getBoolean(0);
             CordovaHttp.disableRedirect(disable);
