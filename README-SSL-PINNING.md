@@ -13,13 +13,13 @@
 
 | Error Code | Description | Exception |
 | --- | --- | --- |
-| 1 | The request timed out | SocketTimeoutException
-| 0 | The host could not be resolved | UnknownHostException
-| -1 | Could not decode response data due to invalid or unknown charset encoding | CharacterCodingException
-| -1 | Could not decode response data due to malformed data | MalformedInputException
-| -1 | There was an error generating the response | JSONException
-| -1 | There was an error with the request: + ex.getMessage() | HttpRequestException (Generic)
-| **-2** | **SSL handshake failed** | **SSLHandshakeException**
+| 1 | The request timed out | SocketTimeoutException |
+| 0 | The host could not be resolved | UnknownHostException |
+| -1 | Could not decode response data due to invalid or unknown charset encoding | CharacterCodingException |
+| -1 | Could not decode response data due to malformed data | MalformedInputException |
+| -1 | There was an error generating the response | JSONException |
+| -1 | There was an error with the request: + ex.getMessage() | HttpRequestException (Generic) |
+| **-2** | **SSL handshake failed** | **SSLHandshakeException** |
 
 ### iOS
 
@@ -52,13 +52,13 @@
 
 ## Testing & Simulating MITM
 
-### You will need:
+### You will need
 - Desktop/Notebook
 - Mobile device (Android/iOS)
 
 Note: Both must be connected to the same network
 
-###  
+###  Setup
 
 1. Download & install [mitmproxy](https://mitmproxy.org/)
 2. In terminal run `mitmproxy`
@@ -75,5 +75,3 @@ Note: Both must be connected to the same network
 4. Now check your app and you should see how when you make a request through sendRequest, it will fail with code -2, indicating an insecure network:
 
 ![App cancelled request](https://i.imgur.com/KqS72dD.png)
-
-Note: PC & Device must be connected to the same network.
