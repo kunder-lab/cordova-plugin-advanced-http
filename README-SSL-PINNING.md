@@ -75,3 +75,4 @@ Note: Both must be connected to the same network
 4. Now check your app and you should see how when you make a request through sendRequest, it will fail with code -2, indicating an insecure network:
 
 ![App cancelled request](https://i.imgur.com/KqS72dD.png)
+[PinnigTest demo app](https://github.com/avidueira/PinningTest)
