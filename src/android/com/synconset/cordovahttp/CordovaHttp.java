@@ -274,7 +274,7 @@ abstract class CordovaHttp {
       } else if (e.getCause() instanceof SocketTimeoutException) {
           this.respondWithError(1, "The request timed out");
       } else if (e.getCause() instanceof SSLHandshakeException) {
-          this.respondWithError("SSL handshake failed");
+          this.respondWithError(-2, "SSL handshake failed");
       } else {
           this.respondWithError("There was an error with the request: " + e.getMessage());
       }

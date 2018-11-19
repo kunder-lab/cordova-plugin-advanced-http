@@ -91,6 +91,9 @@
 
 - (NSNumber*)getStatusCode:(NSError*) error {
     switch ([error code]) {
+        case -999:
+            // connection cancelled
+            return [NSNumber numberWithInt:-2];
         case -1001:
             // timeout
             return [NSNumber numberWithInt:1];

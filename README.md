@@ -41,6 +41,10 @@ This plugin registers a global object located at `cordova.plugin.http`.
 
 Check the [Ionic docs](https://ionicframework.com/docs/native/http/) for how to use this plugin with Ionic-native.
 
+## SSL Pinning
+
+To implement SSL Pinning check: [README-SSL-PINNING](README-SSL-PINNING.md).
+
 ## Synchronous Functions
 
 ### getBasicAuthHeader
