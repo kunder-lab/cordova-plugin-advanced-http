@@ -20,6 +20,9 @@
 | -1 | There was an error generating the response | JSONException |
 | -1 | There was an error with the request: + ex.getMessage() | HttpRequestException (Generic) |
 | **-2** | **SSL handshake failed** | **SSLHandshakeException** |
+| **-2** | **Bad SSL key** | **SSLKeyException** |
+| **-2** | **Peer's identity has not been verified** | **SSLPeerUnverifiedException** |
+| **-2** | **Error in the operation of the SSL protocol** | **SSLProtocolException** |
 
 ### iOS
 

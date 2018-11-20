@@ -21,6 +21,9 @@ import java.nio.charset.CodingErrorAction;
 import java.nio.charset.MalformedInputException;
 
 import javax.net.ssl.SSLHandshakeException;
+import javax.net.ssl.SSLKeyException;
+import javax.net.ssl.SSLPeerUnverifiedException;
+import javax.net.ssl.SSLProtocolException;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -275,6 +278,12 @@ abstract class CordovaHttp {
           this.respondWithError(1, "The request timed out");
       } else if (e.getCause() instanceof SSLHandshakeException) {
           this.respondWithError(-2, "SSL handshake failed");
+      } else if (e.getCause() instanceof SSLKeyException) {
+        this.respondWithError(-2, "Bad SSL key");
+      } else if (e.getCause() instanceof SSLPeerUnverifiedException) {
+        this.respondWithError(-2, "Peer's identity has not been verified");
+      } else if (e.getCause() instanceof SSLProtocolException) {
+        this.respondWithError(-2, "Error in the operation of the SSL protocol");
       } else {
           this.respondWithError("There was an error with the request: " + e.getMessage());
       }
