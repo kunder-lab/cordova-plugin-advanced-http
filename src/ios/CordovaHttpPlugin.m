@@ -93,7 +93,7 @@
     switch ([error code]) {
         case -999:
             // connection cancelled
-            return [NSNumber numberWithInt:-2];
+            return [NSNumber numberWithInt:-3];
         case -1001:
             // timeout
             return [NSNumber numberWithInt:1];
