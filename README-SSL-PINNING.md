@@ -19,7 +19,7 @@
 | -1 | Could not decode response data due to malformed data | MalformedInputException |
 | -1 | There was an error generating the response | JSONException |
 | -1 | There was an error with the request: + ex.getMessage() | HttpRequestException (Generic) |
-| **-2** | **SSL handshake failed** | **SSLHandshakeException** |
+| **-3** | **SSL handshake failed** | **SSLHandshakeException** |
 | **-2** | **Bad SSL key** | **SSLKeyException** |
 | **-2** | **Peer's identity has not been verified** | **SSLPeerUnverifiedException** |
 | **-2** | **Error in the operation of the SSL protocol** | **SSLProtocolException** |
@@ -51,7 +51,7 @@
 | -1 | The connection failed because a call is active. | -1019 kCFURLErrorCallIsActive |
 | -1 | The connection failed because data use is currently not allowed on the device. | -1020 kCFURLErrorDataNotAllowed |
 | -1 | The connection failed because its request’s body stream was exhausted. | -1021 kCFURLErrorRequestBodyStreamExhausted |
-| **-2** | **The connection was cancelled.** | **-999 NSURLErrorCancelled** |
+| **-3** | **The connection was cancelled.** | **-999 NSURLErrorCancelled** |
 
 ## Testing & Simulating MITM
 
